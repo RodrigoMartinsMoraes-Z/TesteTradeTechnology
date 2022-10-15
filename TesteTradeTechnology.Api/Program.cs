@@ -2,6 +2,8 @@ using Microsoft.EntityFrameworkCore;
 
 using TesteTradeTechnology.Context;
 using TesteTradeTechnology.CrossCutting.Interfaces.Context;
+using TesteTradeTechnology.CrossCutting.Interfaces.Services;
+using TesteTradeTechnology.Services.Campeonato;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -25,6 +27,8 @@ builder.Services.AddDbContext<IMeuCampeonatoContext, MeuCampeonatoContext>(
         options.UseNpgsql(configuration.GetConnectionString("MeuCampeonato"), b => b.MigrationsAssembly("TesteTradeTechnology.Context"));
     },
     ServiceLifetime.Scoped);
+
+builder.Services.AddScoped<ICampeonatoService, CampeonatoService>();
 
 var app = builder.Build();
 

@@ -15,12 +15,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\TesteTradeTechnology.Context\TesteTradeTechnology.Context.csproj" />
     <ProjectReference Include="..\TesteTradeTechnology.CrossCutting\TesteTradeTechnology.CrossCutting.csproj" />
+    <ProjectReference Include="..\TesteTradeTechnology.Services\TesteTradeTechnology.Services.csproj" />
   </ItemGroup>
 
 </Project>
