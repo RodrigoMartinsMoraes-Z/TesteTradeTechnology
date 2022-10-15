@@ -3,17 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.32912.340
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TesteTradeTechnology.Web", "TesteTradeTechnology.Web\TesteTradeTechnology.Web.csproj", "{2DEEC59B-3833-4CB5-A77C-6AD72B552A83}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TesteTradeTechnology.Web", "TesteTradeTechnology.Web\TesteTradeTechnology.Web.csproj", "{2DEEC59B-3833-4CB5-A77C-6AD72B552A83}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TesteTradeTechnology.Api", "TesteTradeTechnology.Api\TesteTradeTechnology.Api.csproj", "{10D5C0AC-627C-4987-943E-E0B604283391}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TesteTradeTechnology.Api", "TesteTradeTechnology.Api\TesteTradeTechnology.Api.csproj", "{10D5C0AC-627C-4987-943E-E0B604283391}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TesteTradeTechnology.Domain", "TesteTradeTechnology.Domain\TesteTradeTechnology.Domain.csproj", "{16D58FCE-CE16-40B8-A5F1-2F9DD0DEF5BB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TesteTradeTechnology.Domain", "TesteTradeTechnology.Domain\TesteTradeTechnology.Domain.csproj", "{16D58FCE-CE16-40B8-A5F1-2F9DD0DEF5BB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TesteTradeTechnology.Models", "TesteTradeTechnology.Models\TesteTradeTechnology.Models.csproj", "{535B1147-E0E7-43BD-B055-C7C0A68BD6FC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TesteTradeTechnology.Models", "TesteTradeTechnology.Models\TesteTradeTechnology.Models.csproj", "{535B1147-E0E7-43BD-B055-C7C0A68BD6FC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TesteTradeTechnology.Services", "TesteTradeTechnology.Services\TesteTradeTechnology.Services.csproj", "{FE9C4790-9161-4AF9-8C84-7753B25B3847}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TesteTradeTechnology.Services", "TesteTradeTechnology.Services\TesteTradeTechnology.Services.csproj", "{FE9C4790-9161-4AF9-8C84-7753B25B3847}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TesteTradeTechnology.CrossCutting", "TesteTradeTechnology.CrossCutting\TesteTradeTechnology.CrossCutting.csproj", "{93EB8B01-313F-4A20-BDE2-286A261AC84D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TesteTradeTechnology.CrossCutting", "TesteTradeTechnology.CrossCutting\TesteTradeTechnology.CrossCutting.csproj", "{93EB8B01-313F-4A20-BDE2-286A261AC84D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TesteTradeTechnology.Context", "TesteTradeTechnology.Context\TesteTradeTechnology.Context.csproj", "{FF42BF14-AAFC-4FBD-991F-280FBBEC4126}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{93EB8B01-313F-4A20-BDE2-286A261AC84D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{93EB8B01-313F-4A20-BDE2-286A261AC84D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{93EB8B01-313F-4A20-BDE2-286A261AC84D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF42BF14-AAFC-4FBD-991F-280FBBEC4126}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF42BF14-AAFC-4FBD-991F-280FBBEC4126}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF42BF14-AAFC-4FBD-991F-280FBBEC4126}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF42BF14-AAFC-4FBD-991F-280FBBEC4126}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

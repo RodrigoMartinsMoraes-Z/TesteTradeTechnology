@@ -18,6 +18,7 @@ namespace TesteTradeTechnology.Domain.Campeonatos
         public Campeonato()
         {
             Jogos = new();
+            Nome = "";
         }
     }
 }
