@@ -22,7 +22,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<IMeuCampeonatoContext, MeuCampeonatoContext>(
     options =>
     {
-        options.UseNpgsql(configuration.GetConnectionString("MeuCampeonato"));
+        options.UseNpgsql(configuration.GetConnectionString("MeuCampeonato"), b => b.MigrationsAssembly("TesteTradeTechnology.Context"));
     },
     ServiceLifetime.Scoped);
 

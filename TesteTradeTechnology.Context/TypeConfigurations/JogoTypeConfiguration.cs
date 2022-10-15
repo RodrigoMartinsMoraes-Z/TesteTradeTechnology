@@ -18,7 +18,7 @@ namespace TesteTradeTechnology.Context.TypeConfigurations
             builder.HasKey(j => j.Id);
 
             builder.HasOne(j => j.Placar).WithOne().HasForeignKey<Jogo>(j => j.IdPlacar);
-            builder.HasOne(j => j.Campeonato).WithMany().HasForeignKey(j => j.IdCampeonato);
+            builder.HasOne(j => j.Campeonato).WithMany(c => c.Jogos).HasForeignKey(j => j.IdCampeonato);
         }
     }
 }

@@ -16,6 +16,8 @@ namespace TesteTradeTechnology.Context.TypeConfigurations
         public void Configure(EntityTypeBuilder<Campeonato> builder)
         {
             builder.HasKey(c => c.Id);
+
+            builder.HasMany(c => c.Jogos).WithOne(j => j.Campeonato).HasForeignKey(j => j.IdCampeonato);
         }
     }
 }

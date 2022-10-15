@@ -11,7 +11,7 @@ namespace TesteTradeTechnology.Context
 {
     public class MeuCampeonatoContext : DbContext, IMeuCampeonatoContext
     {
-        public MeuCampeonatoContext(DbContextOptions options) : base(options)
+        public MeuCampeonatoContext(DbContextOptions<MeuCampeonatoContext> options) : base(options)
         {
         }
 
