@@ -15,6 +15,8 @@ using TesteTradeTechnology.Models.Placares;
 using TesteTradeTechnology.Models.Times;
 using TesteTradeTechnology.Services.Campeonato;
 
+var MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
+
 var builder = WebApplication.CreateBuilder(args);
 
 
@@ -25,6 +27,15 @@ IConfigurationRoot configuration = new ConfigurationBuilder()
     .Build();
 
 // Add services to the container.
+
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy(name: MyAllowSpecificOrigins,
+                      policy =>
+                      {
+                          policy.WithOrigins("*");
+                      });
+});
 
 builder.Services.AddControllers();
 builder.Services.AddOptions();
@@ -68,6 +79,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.UseCors(MyAllowSpecificOrigins);
 
 app.UseAuthorization();
 
